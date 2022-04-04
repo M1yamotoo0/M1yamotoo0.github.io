@@ -26,7 +26,7 @@ $(document).ready(function () {
   // Аккордеон
 
   $(".accordeon dd").hide().prev().click(function () {
-    $(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
+    $(this).parents(".accordeon").find("dd").slideUp().prev().removeClass("active");
     $(this).next().not(":visible").slideDown().prev().addClass("active");
   });
 
@@ -39,5 +39,14 @@ $(document).ready(function () {
     $('dt[data-name="' + $hash_text + '"]').toggleClass('active');
     $('dt.active').next().show();
   }
+
+  // Бургер
+
+  let burgerBtn = document.querySelector('.burger-btn');
+  let burger = document.querySelector('.burger');
+  burgerBtn.addEventListener('click', function () {
+    burger.classList.toggle('burger--active');
+    burgerBtn.classList.toggle('burger-btn--active');
+  })
 
 });
