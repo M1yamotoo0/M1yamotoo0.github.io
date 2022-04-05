@@ -66,7 +66,12 @@
                 </nav>
             </div>
             <div class="header__inner">
-                <img class="header__img" src="img/header-photo.jpg" alt="Photo">
+                <picture>
+                    <source srcset="img/header-photo.avif" type="image/avif">
+                    <source srcset="img/header-photo.webp" type="image/webp">
+                    <source srcset="img/header-photo.jpg">
+                    <img class="header__img" src="img/header-photo.jpg" alt="Photo" width="336" height="225">
+                </picture>
                 <div class="header__wrapper">
                     <h1 class="header__title">
                         <span class="header__title-wrapper">
@@ -557,7 +562,12 @@
                         Контакты
                     </p>
                     <div class="aside__inner">
-                        <img class="aside__img" src="img/contact.jpg" alt="Photo">
+                        <picture>
+                            <source srcset="img/contact.avif" type="image/avif">
+                            <source srcset="img/contact.webp" type="image/webp">
+                            <source srcset="img/contact.jpg">
+                            <img class="aside__img" src="img/contact.jpg" alt="Photo">
+                        </picture>
                         <h4 class="aside__name">
                             <span class="aside__name-inner">Персональный психолог</span><br>
                             Дарья Волк
