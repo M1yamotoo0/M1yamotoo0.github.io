@@ -26,14 +26,18 @@ $(document).ready(function () {
   // Аккордеон
 
   $(".accordeon dd").hide().prev().click(function () {
-    $(this).parents(".accordeon").find("dd").slideUp().prev().removeClass("active");
+    if (document.documentElement.clientWidth > 768) {
+      $(this).parents(".accordeon").find("dd").slideUp().prev().removeClass("active");
+    } else {
+      $(this).next().slideUp().removeClass("active");
+    }
     $(this).next().not(":visible").slideDown().prev().addClass("active");
   });
 
   // Открытие элементов аккордеона с других страниц
 
   if (window.location.hash) {
-    var $hash = window.location.hash,
+    let $hash = window.location.hash,
       $hash_text = $hash.substr(1);
     $('dt').next().hide();
     $('dt[data-name="' + $hash_text + '"]').toggleClass('active');
@@ -48,5 +52,19 @@ $(document).ready(function () {
     burger.classList.toggle('burger--active');
     burgerBtn.classList.toggle('burger-btn--active');
   })
+
+  var header = $('.burger-btn'),
+    scrollPrev = 0;
+
+  $(window).scroll(function () {
+    var scrolled = $(window).scrollTop();
+
+    if (scrolled > 100 && scrolled > scrollPrev) {
+      header.addClass('burger-btn--out');
+    } else {
+      header.removeClass('burger-btn--out');
+    }
+    scrollPrev = scrolled;
+  });
 
 });
