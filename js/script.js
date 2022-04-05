@@ -51,18 +51,20 @@ $(document).ready(function () {
   burgerBtn.addEventListener('click', function () {
     burger.classList.toggle('burger--active');
     burgerBtn.classList.toggle('burger-btn--active');
-  })
+  });
 
-  var header = $('.burger-btn'),
+  let header = $('.burger-btn'),
     scrollPrev = 0;
 
   $(window).scroll(function () {
-    var scrolled = $(window).scrollTop();
+    let scrolled = $(window).scrollTop();
 
-    if (scrolled > 100 && scrolled > scrollPrev) {
-      header.addClass('burger-btn--out');
-    } else {
-      header.removeClass('burger-btn--out');
+    if (document.documentElement.clientWidth < 768) {
+      if (scrolled > 100 && scrolled > scrollPrev) {
+        header.addClass('burger-btn--out');
+      } else {
+        header.removeClass('burger-btn--out');
+      }
     }
     scrollPrev = scrolled;
   });
