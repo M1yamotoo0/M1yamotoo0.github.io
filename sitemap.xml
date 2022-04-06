@@ -1,3 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url><loc>http://psycholog-doma.narod.ru/index/0-1</loc><changefreq>weekly</changefreq></url><url><loc>http://psycholog-doma.narod.ru/index/0-2</loc><changefreq>weekly</changefreq></url><url><loc>http://psycholog-doma.narod.ru/index/0-3</loc><changefreq>weekly</changefreq></url><url><loc>http://psycholog-doma.narod.ru/gb/</loc><changefreq>weekly</changefreq></url></urlset>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://m1yamotoo0.github.io/</loc>
+  <lastmod>2022-04-05T18:08:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://m1yamotoo0.github.io/index.html</loc>
+  <lastmod>2022-04-05T18:08:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://m1yamotoo0.github.io/about-me.html</loc>
+  <lastmod>2022-04-05T18:08:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://m1yamotoo0.github.io/work.html</loc>
+  <lastmod>2022-04-05T18:08:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://m1yamotoo0.github.io/trainings.html</loc>
+  <lastmod>2022-04-05T18:08:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://m1yamotoo0.github.io/reviews.html</loc>
+  <lastmod>2022-04-05T18:08:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://m1yamotoo0.github.io/articles.html</loc>
+  <lastmod>2022-04-05T18:08:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
