@@ -23,27 +23,6 @@ $(document).ready(function () {
       .closest('div.main-content__tabs').find('div.main-content__tab-content').removeClass('main-content__tab-content--active').eq($(this).index()).addClass('main-content__tab-content--active');
   });
 
-  // Аккордеон
-
-  $(".accordeon dd").hide().prev().click(function () {
-    if (document.documentElement.clientWidth > 768) {
-      $(this).parents(".accordeon").find("dd").slideUp().prev().removeClass("active");
-    } else {
-      $(this).next().slideUp().removeClass("active");
-    }
-    $(this).next().not(":visible").slideDown().prev().addClass("active");
-  });
-
-  // Открытие элементов аккордеона с других страниц
-
-  if (window.location.hash) {
-    let $hash = window.location.hash,
-      $hash_text = $hash.substr(1);
-    $('dt').next().hide();
-    $('dt[data-name="' + $hash_text + '"]').toggleClass('active');
-    $('dt.active').next().show();
-  }
-
   // Бургер
 
   let burgerBtn = document.querySelector('.burger-btn');
