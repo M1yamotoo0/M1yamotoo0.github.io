@@ -15,6 +15,18 @@ $(document).ready(function () {
 
     toggleSlide('.btn-more');
 
+    function toggleSlide2(item) {
+        $(item).each(function (i) {
+            $(this).on('click', function (e) {
+                e.preventDefault();
+                $('.bonus-overlay').eq(i).toggleClass('bonus-overlay--active');
+                $('.btn-question').eq(i).toggleClass('btn-question--active');
+            });
+        });
+    }
+
+    toggleSlide2('.btn-question');
+
     // Cookie
 
     function checkCookies() {
@@ -57,43 +69,14 @@ $(document).ready(function () {
         });
     });
 
-    // Кастом скролла 
-
-    (function ($) {
-        $(window).on("load", function () {
-            $(".main__bonus-scroll,.main__casino-scroll").mCustomScrollbar({
-                axis: "x",
-                theme: "light-2",
-                scrollInertia: 1000,
-                callbacks: {
-                    alwaysTriggerOffsets: "false"
-                }
-            });
-        });
-    })(jQuery);
-
     // Бургер 
 
     $('.burger').click(function () {
         $('.burger').toggleClass('burger--active');
         $('.header__nav').toggleClass('header__nav--active');
+        $('.header').toggleClass('header--active');
+        $('.header__logo-mobile').toggleClass('header__logo-mobile--active');
     });
+
 });
 
-
-$(document).ready(function () {
-
-    // Overlay x2
-
-    function toggleSlide(item) {
-        $(item).each(function (i) {
-            $(this).on('click', function (e) {
-                e.preventDefault();
-                $('.bonus-overlay').eq(i).toggleClass('bonus-overlay--active');
-                $('.btn-question').eq(i).toggleClass('btn-question--active');
-            });
-        });
-    }
-
-    toggleSlide('.btn-question');
-});
