@@ -74,4 +74,48 @@ $(document).ready(function () {
             }
         ]
     });
+
+    $('.main__bonus-list--mt12px').slick({
+        responsive: [
+            {
+                breakpoint: 99999,
+                settings: 'unslick'
+            },
+
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000
+                }
+            },
+
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    infinite: false,
+                    dots: true,
+                    autoplay: false
+                }
+            },
+
+            {
+                breakpoint: 426,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    infinite: false,
+                    dots: true
+                }
+            }
+        ]
+    });
 });

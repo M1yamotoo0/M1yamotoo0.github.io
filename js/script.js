@@ -57,18 +57,6 @@ $(document).ready(function () {
             .removeClass('tab__content--active').eq($(this).index()).addClass('tab__content--active');
     });
 
-    // Кнопка "еще"
-
-    $(".content-block").each(function () {
-        let more = $(this).find(".show-more");
-        let hide = $(this).find(".hide-content");
-        hide.hide();
-        more.click(function () {
-            hide.slideToggle();
-            more.text(more.text() == "Скрыть" ? "еще..." : "Скрыть");
-        });
-    });
-
     // Бургер 
 
     $('.burger').click(function () {
