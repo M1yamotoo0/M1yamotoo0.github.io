@@ -118,4 +118,46 @@ $(document).ready(function () {
             }
         ]
     });
+
+    $('.main__gallery').slick({
+        responsive: [
+            {
+                breakpoint: 99999,
+                settings: 'unslick'
+            },
+
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true
+                }
+            },
+
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    infinite: false,
+                    dots: true,
+                    autoplay: false
+                }
+            },
+
+            {
+                breakpoint: 426,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    infinite: false,
+                    dots: true
+                }
+            }
+        ]
+    });
 });
